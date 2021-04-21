@@ -26,3 +26,6 @@
 	1. đứng ở branch dev02 gõ lệnh: git stash (lưu toàn bộ sự thay đổi)
 	2. git checkout dev01)(chuyển qua branch dev01)
 	3. git stash pop (cập nhật sự thay đổi ở bước 1 vào nhánh cần commit dev01) 
+6. apply commit của nhánh này qua nhánh khác
+	1. git log để lấy hash cần apply
+	2. ở nhánh cần apply gõ lệnh: git cherry-pick hash-commit
