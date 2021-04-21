@@ -29,3 +29,6 @@
 6. apply commit của nhánh này qua nhánh khác
 	1. git log để lấy hash cần apply
 	2. ở nhánh cần apply gõ lệnh: git cherry-pick hash-commit
+7. lỡ tay xóa mất commit trước đó thì làm sao để revert?
+	1. git reflog
+	2. chọn commit muốn khôi phục : git reset --hard HEAD@{hash muốn khôi phục tìm thấy ở bước 1}
