@@ -15,3 +15,14 @@
 		2. pull branch A
 		3. nếu có confict thì resolve đi rồi push lên
 	c2. dùng merge tương tự như ở trên, nếu confict thì resolve đi là được
+
+
+4. đổi tên branch
+	- nếu đứng ở branch định đổi tên thì gõ lệnh: git branch -m new_name
+	- nếu đứng ở branch khác thì gõ lệnh        : git branch -m old_name new_name
+	- nếu muốn đổi tên ở remote push 	    : git push origin :old_name new_name 
+5. tính code ở branch dev01 nhưng code nhầm ở branch dev02, mà các file đã code thì rất nhiều, giờ move qua branch dev01 thì làm sao?
+	- chưa commit code đó ở branch dev02
+	1. đứng ở branch dev02 gõ lệnh: git stash (lưu toàn bộ sự thay đổi)
+	2. git checkout dev01)(chuyển qua branch dev01)
+	3. git stash pop (cập nhật sự thay đổi ở bước 1 vào nhánh cần commit dev01) 
