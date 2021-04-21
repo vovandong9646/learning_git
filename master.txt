@@ -29,3 +29,4 @@
 6. apply commit của nhánh này qua nhánh khác
 	1. git log để lấy hash cần apply
 	2. ở nhánh cần apply gõ lệnh: git cherry-pick hash-commit
+	3. nếu conflict thì gõ lệnh: git cherry-pick --continue -> sau đó gõ :qa
