@@ -1,4 +1,4 @@
-﻿1. create branch: 
+1. create branch: 
 	dung switch/checkout -> remote/head từ master cũng đc
 	dùng create branch -> dùng remote thì nó sẽ thay đổi luôn ở master
 
