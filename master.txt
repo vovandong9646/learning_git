@@ -1,0 +1,35 @@
+﻿1. create branch: 
+	dung switch/checkout -> remote/head từ master cũng đc
+	dùng create branch -> dùng remote thì nó sẽ thay đổi luôn ở master
+
+	-> để an toàn thì nên dùng switch/checkout để create branch
+
+2. reset branch (commit nhầm thì ta có thể reset lại cái lần commit mong muốn)
+	1. vào history -> trỏ với lần commit mà muốn revert lại
+	2. chọn reset to this
+	3. push --force lên là được 
+	Note: chọn hard thì nó sẽ xóa các lần commit sau cái commit revert
+
+3. merge branch A to branch B
+	c1. 1. pull branch hiện tại (B)
+		2. pull branch A
+		3. nếu có confict thì resolve đi rồi push lên
+	c2. dùng merge tương tự như ở trên, nếu confict thì resolve đi là được
+
+
+4. đổi tên branch
+	- nếu đứng ở branch định đổi tên thì gõ lệnh: git branch -m new_name
+	- nếu đứng ở branch khác thì gõ lệnh        : git branch -m old_name new_name
+	- nếu muốn đổi tên ở remote push 	    : git push origin :old_name new_name 
+5. tính code ở branch dev01 nhưng code nhầm ở branch dev02, mà các file đã code thì rất nhiều, giờ move qua branch dev01 thì làm sao?
+	- chưa commit code đó ở branch dev02
+	1. đứng ở branch dev02 gõ lệnh: git stash (lưu toàn bộ sự thay đổi)
+	2. git checkout dev01)(chuyển qua branch dev01)
+	3. git stash pop (cập nhật sự thay đổi ở bước 1 vào nhánh cần commit dev01) 
+6. apply commit của nhánh này qua nhánh khác
+	1. git log để lấy hash cần apply
+	2. ở nhánh cần apply gõ lệnh: git cherry-pick hash-commit
+	3. nếu conflict thì gõ lệnh: git cherry-pick --continue -> sau đó gõ :qa
+7. lỡ tay xóa mất commit trước đó thì làm sao để revert?
+	1. git reflog
+	2. chọn commit muốn khôi phục : git reset --hard HEAD@{hash muốn khôi phục tìm thấy ở bước 1}
