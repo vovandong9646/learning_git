@@ -1,0 +1,11 @@
+This is my first file. How are you
+Insert file
+/usr/bin/bash: $'\302\233:Q': command not found
+:q
+
+
+
+
+
+
+
