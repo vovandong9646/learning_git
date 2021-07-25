@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-add file
-=======
-add file 01
->>>>>>> 8beaae5... adđ
+This is IT_DEV-01
