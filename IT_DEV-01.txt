@@ -1,2 +1,5 @@
+<<<<<<< HEAD
 add file
+=======
 add file 01
+>>>>>>> 8beaae5... adđ
