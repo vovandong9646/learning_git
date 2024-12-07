@@ -1,20 +1,11 @@
 1. create branch: 
 	dung switch/checkout -> remote/head từ master cũng đc
-	dùng create branch -> dùng remote thì nó sẽ thay đổi luôn ở master
-
-	-> để an toànfsdfsdfsdfsdf thì nên dùng switch/checkout để create branch
 
 2. reset branch (commit nhầm thì ta có thể reset lại cái lần commit mong muốn)
 	1. vào history -> trỏ với lần commit mà muốn revert lại
 	2. chọn reset to this
 	3. push --force lên là được fsdfsdfsdfsdf
 	Note: chọn hard thì nó sẽ xóa các lần commit sau cái commit revert
-
-3. merge branch A to branch B
-	c1. 1. pull branch hiện tại (B)
-		2. pull branch A
-		3. nếu có confict thì resolve đi rồi push lên
-	c2. dùng merge tương tự như ở trên, nếu confict thì resolve đi là được
 
 
 4. đổi tên branch
